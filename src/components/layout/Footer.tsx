@@ -7,11 +7,11 @@ export default function Footer() {
   const whatsappLink = `https://wa.me/${COMPANY_INFO.whatsapp}?text=${encodeURIComponent("Hi, I'm interested in your CA services.")}`;
 
   return (
-    <footer className="bg-primary-950 text-white">
+    <footer className="bg-slate-900 text-white">
       {/* CTA Section */}
-      <div className="border-b border-primary-900">
+      <div className="border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="bg-gradient-to-r from-primary-800 to-primary-700 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="bg-gradient-to-r from-primary-900 to-primary-800 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-2xl md:text-3xl font-bold mb-2">Ready to simplify your finances?</h3>
               <p className="text-primary-100">Get expert CA services with transparent pricing. No hidden fees.</p>
@@ -55,19 +55,19 @@ export default function Footer() {
               {COMPANY_INFO.tagline}. Trusted by 500+ clients across India and abroad.
             </p>
             <div className="flex gap-4">
-              <a href="https://youtube.com/@cacmaronakagrawal?si=3BKWyU_hYGL4f7IG" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary-900 rounded-lg flex items-center justify-center hover:bg-primary-800 transition-colors">
+              <a href="https://youtube.com/@cacmaronakagrawal?si=3BKWyU_hYGL4f7IG" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-slate-700 transition-colors">
                 <Youtube className="w-5 h-5" />
               </a>
-              <a href="https://www.instagram.com/financebycaronak/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary-900 rounded-lg flex items-center justify-center hover:bg-primary-800 transition-colors">
+              <a href="https://www.instagram.com/financebycaronak/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-slate-700 transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://www.linkedin.com/in/caronakagrawal" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary-900 rounded-lg flex items-center justify-center hover:bg-primary-800 transition-colors">
+              <a href="https://www.linkedin.com/in/caronakagrawal" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-slate-700 transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="https://x.com/cacmaronak" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary-900 rounded-lg flex items-center justify-center hover:bg-primary-800 transition-colors">
+              <a href="https://x.com/cacmaronak" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-slate-700 transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="https://www.facebook.com/share/16VMJsrALk/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-primary-900 rounded-lg flex items-center justify-center hover:bg-primary-800 transition-colors">
+              <a href="https://www.facebook.com/share/16VMJsrALk/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-slate-700 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
             </div>
@@ -141,7 +141,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-primary-900">
+      <div className="border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-slate-500 text-sm">

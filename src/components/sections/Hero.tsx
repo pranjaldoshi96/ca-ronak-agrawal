@@ -11,15 +11,15 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-950 via-primary-900 to-primary-800">
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-primary-950 to-primary-900">
         {/* Decorative elements */}
-        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-br from-secondary-500/20 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-primary-500/30 to-transparent rounded-full blur-3xl translate-y-1/2 -translate-x-1/3" />
+        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-br from-secondary-500/10 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-primary-600/20 to-transparent rounded-full blur-3xl translate-y-1/2 -translate-x-1/3" />
         
         {/* Grid pattern */}
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.3) 1px, transparent 0)`,
+            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.4) 1px, transparent 0)`,
             backgroundSize: '40px 40px'
           }} />
         </div>
@@ -81,7 +81,7 @@ export default function Hero() {
 
           {/* Right side - Stats card */}
           <div className="relative animate-slide-in-right delay-400">
-            <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
+            <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10">
               {/* Floating badge */}
               <div className="absolute -top-4 right-8 bg-secondary-500 text-white text-sm font-medium px-4 py-2 rounded-full shadow-lg">
                 {COMPANY_INFO.experience} Years Experience

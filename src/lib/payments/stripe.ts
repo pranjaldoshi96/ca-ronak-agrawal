@@ -57,3 +57,4 @@ export function formatAmountFromStripe(amount: number, currency: string = "usd")
   return amount / 100;
 }
 
+

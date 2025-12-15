@@ -28,7 +28,7 @@ export default function ServicesPage() {
       <Header />
       <main>
         {/* Hero section */}
-        <section className="relative pt-32 pb-20 bg-gradient-to-br from-primary-950 via-primary-900 to-primary-800 overflow-hidden">
+        <section className="relative pt-32 pb-20 bg-gradient-to-br from-slate-900 via-primary-950 to-primary-900 overflow-hidden">
           {/* Background decorations */}
           <div className="absolute inset-0">
             <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-secondary-500/10 rounded-full blur-3xl" />

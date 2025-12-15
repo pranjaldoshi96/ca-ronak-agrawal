@@ -187,7 +187,7 @@ export default function AdminDashboard() {
   return (
     <div className="min-h-screen bg-slate-100">
       {/* Top nav */}
-      <header className="fixed top-0 left-0 right-0 h-16 bg-primary-950 border-b border-primary-900 z-50">
+      <header className="fixed top-0 left-0 right-0 h-16 bg-slate-900 border-b border-slate-800 z-50">
         <div className="flex items-center justify-between h-full px-4">
           <div className="flex items-center gap-4">
             <Link href="/admin/dashboard" className="flex items-center gap-2">
@@ -206,7 +206,7 @@ export default function AdminDashboard() {
               <input
                 type="text"
                 placeholder="Search clients, leads, services..."
-                className="w-full pl-10 pr-4 py-2 bg-primary-900 border border-primary-800 rounded-lg text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary-500"
+                className="w-full pl-10 pr-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary-500"
               />
             </div>
           </div>

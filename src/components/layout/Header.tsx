@@ -33,7 +33,7 @@ export default function Header() {
       {/* Top bar */}
       <div className={cn(
         "hidden lg:block transition-all duration-300 border-b",
-        isScrolled ? "bg-primary-950 border-primary-900" : "bg-primary-950/90 backdrop-blur border-primary-900/50"
+        isScrolled ? "bg-slate-900 border-slate-800" : "bg-slate-900/90 backdrop-blur border-slate-800/50"
       )}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-10 text-sm">

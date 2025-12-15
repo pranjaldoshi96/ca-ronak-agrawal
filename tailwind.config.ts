@@ -9,36 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Primary brand colors - Deep navy blue for trust & professionalism
+        // Primary - Deep Emerald Green (Trust, Wealth, Growth)
         primary: {
-          50: "#eef5ff",
-          100: "#d9e8ff",
-          200: "#bcd7ff",
-          300: "#8ebeff",
-          400: "#599aff",
-          500: "#3373ff",
-          600: "#1a4fff",
-          700: "#1340eb",
-          800: "#1635be",
-          900: "#183395",
-          950: "#0f1d4a",
-        },
-        // Secondary - Warm gold for accents (trust, premium feel)
-        secondary: {
-          50: "#fffbeb",
-          100: "#fef3c7",
-          200: "#fde68a",
-          300: "#fcd34d",
-          400: "#fbbf24",
-          500: "#f59e0b",
-          600: "#d97706",
-          700: "#b45309",
-          800: "#92400e",
-          900: "#78350f",
-          950: "#451a03",
-        },
-        // Success green for positive states
-        success: {
           50: "#ecfdf5",
           100: "#d1fae5",
           200: "#a7f3d0",
@@ -49,20 +21,62 @@ const config: Config = {
           700: "#047857",
           800: "#065f46",
           900: "#064e3b",
+          950: "#022c22",
         },
-        // Neutral grays
+        // Secondary - Rich Gold (Premium, Excellence)
+        secondary: {
+          50: "#fefce8",
+          100: "#fef9c3",
+          200: "#fef08a",
+          300: "#fde047",
+          400: "#facc15",
+          500: "#eab308",
+          600: "#ca8a04",
+          700: "#a16207",
+          800: "#854d0e",
+          900: "#713f12",
+          950: "#422006",
+        },
+        // Accent - Deep Navy for contrast
+        accent: {
+          50: "#f0f9ff",
+          100: "#e0f2fe",
+          200: "#bae6fd",
+          300: "#7dd3fc",
+          400: "#38bdf8",
+          500: "#0ea5e9",
+          600: "#0284c7",
+          700: "#0369a1",
+          800: "#075985",
+          900: "#0c4a6e",
+          950: "#082f49",
+        },
+        // Success
+        success: {
+          50: "#f0fdf4",
+          100: "#dcfce7",
+          200: "#bbf7d0",
+          300: "#86efac",
+          400: "#4ade80",
+          500: "#22c55e",
+          600: "#16a34a",
+          700: "#15803d",
+          800: "#166534",
+          900: "#14532d",
+        },
+        // Neutral - Warm grays
         slate: {
-          50: "#f8fafc",
-          100: "#f1f5f9",
-          200: "#e2e8f0",
-          300: "#cbd5e1",
-          400: "#94a3b8",
-          500: "#64748b",
-          600: "#475569",
-          700: "#334155",
-          800: "#1e293b",
-          900: "#0f172a",
-          950: "#020617",
+          50: "#fafaf9",
+          100: "#f5f5f4",
+          200: "#e7e5e4",
+          300: "#d6d3d1",
+          400: "#a8a29e",
+          500: "#78716c",
+          600: "#57534e",
+          700: "#44403c",
+          800: "#292524",
+          900: "#1c1917",
+          950: "#0c0a09",
         },
       },
       fontFamily: {
@@ -72,7 +86,7 @@ const config: Config = {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "hero-pattern": "linear-gradient(135deg, #0f1d4a 0%, #183395 50%, #1a4fff 100%)",
+        "hero-pattern": "linear-gradient(135deg, #022c22 0%, #064e3b 50%, #047857 100%)",
         "card-gradient": "linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%)",
       },
       animation: {
