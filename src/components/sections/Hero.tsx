@@ -11,16 +11,16 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-primary-950 to-primary-900">
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800">
         {/* Decorative elements */}
-        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-br from-secondary-500/10 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-primary-600/20 to-transparent rounded-full blur-3xl translate-y-1/2 -translate-x-1/3" />
+        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-br from-secondary-500/20 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-secondary-600/10 to-transparent rounded-full blur-3xl translate-y-1/2 -translate-x-1/3" />
         
         {/* Grid pattern */}
-        <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0 opacity-[0.02]">
           <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.4) 1px, transparent 0)`,
-            backgroundSize: '40px 40px'
+            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.5) 1px, transparent 0)`,
+            backgroundSize: '32px 32px'
           }} />
         </div>
       </div>
@@ -81,9 +81,9 @@ export default function Hero() {
 
           {/* Right side - Stats card */}
           <div className="relative animate-slide-in-right delay-400">
-            <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-8 border border-white/10">
+            <div className="bg-white/[0.03] backdrop-blur-lg rounded-3xl p-8 border border-white/10">
               {/* Floating badge */}
-              <div className="absolute -top-4 right-8 bg-secondary-500 text-white text-sm font-medium px-4 py-2 rounded-full shadow-lg">
+              <div className="absolute -top-4 right-8 bg-secondary-500 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg shadow-secondary-500/30">
                 {COMPANY_INFO.experience} Years Experience
               </div>
 
@@ -92,7 +92,7 @@ export default function Hero() {
               <div className="grid grid-cols-2 gap-6 mb-8">
                 {STATS.map((stat, index) => (
                   <div key={stat.label} className={`text-center p-4 rounded-xl bg-white/5 animate-scale-in delay-${(index + 1) * 100}`}>
-                    <div className="text-3xl sm:text-4xl font-bold text-secondary-400 mb-1">{stat.value}</div>
+                    <div className="text-3xl sm:text-4xl font-bold text-secondary-400 mb-1" style={{textShadow: '0 0 30px rgba(212,132,95,0.3)'}}>{stat.value}</div>
                     <div className="text-sm text-slate-300">{stat.label}</div>
                   </div>
                 ))}

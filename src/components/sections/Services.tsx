@@ -42,12 +42,12 @@ export default function Services() {
               <Card key={service.id} hover className="group">
                 <CardContent className="p-8">
                   {/* Icon */}
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-100 to-primary-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    {IconComponent && <IconComponent className="w-7 h-7 text-primary-600" />}
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-secondary-100 to-secondary-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    {IconComponent && <IconComponent className="w-7 h-7 text-secondary-600" />}
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-primary-700 transition-colors">
+                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-secondary-600 transition-colors">
                     {service.shortTitle}
                   </h3>
 
@@ -60,7 +60,7 @@ export default function Services() {
                   <ul className="space-y-2 mb-6">
                     {service.features.slice(0, 3).map((feature) => (
                       <li key={feature} className="flex items-center gap-2 text-sm text-slate-500">
-                        <div className="w-1.5 h-1.5 rounded-full bg-primary-500" />
+                        <div className="w-1.5 h-1.5 rounded-full bg-secondary-500" />
                         {feature}
                       </li>
                     ))}
@@ -70,7 +70,7 @@ export default function Services() {
                   <div className="flex items-center justify-between pt-6 border-t border-slate-100">
                     <div>
                       <span className="text-sm text-slate-500">Starting from</span>
-                      <p className="text-xl font-bold text-primary-700">
+                      <p className="text-xl font-bold text-slate-900">
                         ₹{service.pricing.basic.price.toLocaleString('en-IN')}
                       </p>
                     </div>

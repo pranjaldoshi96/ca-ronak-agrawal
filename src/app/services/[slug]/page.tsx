@@ -66,10 +66,10 @@ export default async function ServicePage({ params }: Props) {
       <Header />
       <main>
         {/* Hero section */}
-        <section className="relative pt-32 pb-20 bg-gradient-to-br from-slate-900 via-primary-950 to-primary-900 overflow-hidden">
+        <section className="relative pt-32 pb-20 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 overflow-hidden">
           {/* Background decorations */}
           <div className="absolute inset-0">
-            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-secondary-500/10 rounded-full blur-3xl" />
+            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-secondary-500/15 rounded-full blur-3xl" />
           </div>
 
           <div className="container-custom relative">
@@ -148,8 +148,8 @@ export default async function ServicePage({ params }: Props) {
                   key={feature}
                   className="flex items-start gap-4 p-6 bg-slate-50 rounded-2xl hover:bg-slate-100 transition-colors"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-primary-100 flex items-center justify-center flex-shrink-0">
-                    <CheckCircle className="w-5 h-5 text-primary-600" />
+                  <div className="w-10 h-10 rounded-xl bg-secondary-100 flex items-center justify-center flex-shrink-0">
+                    <CheckCircle className="w-5 h-5 text-secondary-600" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">{feature}</h3>
@@ -177,7 +177,7 @@ export default async function ServicePage({ params }: Props) {
               {pricingTiers.map((tier) => (
                 <Card 
                   key={tier.key}
-                  className={`relative ${tier.popular ? 'ring-2 ring-primary-500 scale-105' : ''}`}
+                  className={`relative ${tier.popular ? 'ring-2 ring-secondary-500 scale-105' : ''}`}
                 >
                   {tier.popular && (
                     <div className="absolute -top-4 left-1/2 -translate-x-1/2">
@@ -189,7 +189,7 @@ export default async function ServicePage({ params }: Props) {
                   </CardHeader>
                   <CardContent className="p-6">
                     <div className="mb-6">
-                      <span className="text-4xl font-bold text-primary-700">
+                      <span className="text-4xl font-bold text-slate-900">
                         ₹{tier.price.toLocaleString('en-IN')}
                       </span>
                       {tier.key !== 'basic' && service.id.includes('gst') && (
@@ -235,7 +235,7 @@ export default async function ServicePage({ params }: Props) {
         </section>
 
         {/* CTA section */}
-        <section className="py-20 bg-slate-900">
+        <section className="py-20 bg-slate-950">
           <div className="container-custom">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
@@ -253,7 +253,7 @@ export default async function ServicePage({ params }: Props) {
                   </Button>
                 </Link>
                 <a href={`tel:${COMPANY_INFO.phone}`}>
-                  <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary-900">
+                  <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-slate-900">
                     <Phone className="w-5 h-5" />
                     {COMPANY_INFO.phone}
                   </Button>

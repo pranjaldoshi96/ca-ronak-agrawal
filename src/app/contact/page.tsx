@@ -51,9 +51,9 @@ function ContactContent() {
       <Header />
       <main>
         {/* Hero section */}
-        <section className="relative pt-32 pb-20 bg-gradient-to-br from-slate-900 via-primary-950 to-primary-900 overflow-hidden">
+        <section className="relative pt-32 pb-20 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 overflow-hidden">
           <div className="absolute inset-0">
-            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-secondary-500/10 rounded-full blur-3xl" />
+            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-secondary-500/15 rounded-full blur-3xl" />
           </div>
 
           <div className="container-custom relative text-center">
@@ -113,15 +113,15 @@ function ContactContent() {
                   <Card key={info.title} hover>
                     <CardContent className="p-6">
                       <div className="flex items-start gap-4">
-                        <div className="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center flex-shrink-0">
-                          <info.icon className="w-6 h-6 text-primary-600" />
+                        <div className="w-12 h-12 rounded-xl bg-secondary-100 flex items-center justify-center flex-shrink-0">
+                          <info.icon className="w-6 h-6 text-secondary-600" />
                         </div>
                         <div>
                           <h3 className="font-semibold text-slate-900">{info.title}</h3>
                           {info.link !== "#" ? (
                             <a
                               href={info.link}
-                              className="text-primary-600 hover:text-primary-700 transition-colors"
+                              className="text-secondary-600 hover:text-secondary-700 transition-colors"
                             >
                               {info.value}
                             </a>
@@ -154,7 +154,7 @@ function ContactContent() {
           />
           <div className="absolute bottom-4 left-4 bg-white rounded-xl shadow-lg p-4 max-w-xs">
             <div className="flex items-start gap-3">
-              <MapPin className="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" />
+              <MapPin className="w-5 h-5 text-secondary-600 flex-shrink-0 mt-0.5" />
               <div>
                 <p className="font-medium text-slate-900">Our Office</p>
                 <p className="text-sm text-slate-600">Bus Stand, Ranapur, Jhabua, Madhya Pradesh - 457993</p>
@@ -172,7 +172,7 @@ export default function ContactPage() {
   return (
     <Suspense fallback={
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary-600"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-secondary-600"></div>
       </div>
     }>
       <ContactContent />

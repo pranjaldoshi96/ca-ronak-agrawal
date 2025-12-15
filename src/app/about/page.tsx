@@ -60,9 +60,9 @@ export default function AboutPage() {
       <Header />
       <main>
         {/* Hero section */}
-        <section className="relative pt-32 pb-20 bg-gradient-to-br from-slate-900 via-primary-950 to-primary-900 overflow-hidden">
+        <section className="relative pt-32 pb-20 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 overflow-hidden">
           <div className="absolute inset-0">
-            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-secondary-500/10 rounded-full blur-3xl" />
+            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-secondary-500/15 rounded-full blur-3xl" />
           </div>
 
           <div className="container-custom relative">
@@ -87,7 +87,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {STATS.map((stat) => (
                 <div key={stat.label} className="text-center">
-                  <div className="text-4xl md:text-5xl font-bold text-primary-700 mb-2">
+                  <div className="text-4xl md:text-5xl font-bold text-secondary-600 mb-2">
                     {stat.value}
                   </div>
                   <div className="text-slate-600">{stat.label}</div>
@@ -132,11 +132,11 @@ export default function AboutPage() {
                 {milestones.map((milestone, index) => (
                   <div key={milestone.year} className="flex gap-4">
                     <div className="flex flex-col items-center">
-                      <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center">
-                        <span className="text-sm font-bold text-primary-700">{milestone.year}</span>
+                      <div className="w-12 h-12 rounded-full bg-secondary-100 flex items-center justify-center">
+                        <span className="text-sm font-bold text-secondary-700">{milestone.year}</span>
                       </div>
                       {index < milestones.length - 1 && (
-                        <div className="w-0.5 h-full bg-primary-100 mt-2" />
+                        <div className="w-0.5 h-full bg-secondary-100 mt-2" />
                       )}
                     </div>
                     <div className="pb-6">
@@ -168,8 +168,8 @@ export default function AboutPage() {
               {values.map((value) => (
                 <Card key={value.title} hover>
                   <CardContent className="p-8 text-center">
-                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary-100 to-primary-50 flex items-center justify-center mx-auto mb-6">
-                      <value.icon className="w-8 h-8 text-primary-600" />
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-secondary-100 to-secondary-50 flex items-center justify-center mx-auto mb-6">
+                      <value.icon className="w-8 h-8 text-secondary-600" />
                     </div>
                     <h3 className="text-xl font-semibold text-slate-900 mb-3">{value.title}</h3>
                     <p className="text-slate-600">{value.description}</p>
@@ -198,22 +198,22 @@ export default function AboutPage() {
               {team.map((member) => (
                 <Card key={member.name} hover>
                   <CardContent className="p-8">
-                    <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary-200 to-primary-100 flex items-center justify-center mx-auto mb-6">
-                      <span className="text-4xl font-bold text-primary-700">
+                    <div className="w-32 h-32 rounded-full bg-gradient-to-br from-secondary-200 to-secondary-100 flex items-center justify-center mx-auto mb-6">
+                      <span className="text-4xl font-bold text-secondary-700">
                         RA
                       </span>
                     </div>
                     <div className="text-center">
                       <h3 className="text-xl font-semibold text-slate-900">{member.name}</h3>
-                      <p className="text-primary-600 mb-2">{member.role}</p>
+                      <p className="text-secondary-600 mb-2">{member.role}</p>
                       <p className="text-slate-500 mb-1">{member.specialization}</p>
                       <p className="text-slate-400 text-sm">{member.experience} experience</p>
                     </div>
                     <div className="flex justify-center gap-3 mt-6">
-                      <a href="https://www.linkedin.com/in/caronakagrawal" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-slate-500 hover:bg-primary-100 hover:text-primary-600 transition-colors">
+                      <a href="https://www.linkedin.com/in/caronakagrawal" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-slate-500 hover:bg-secondary-100 hover:text-secondary-600 transition-colors">
                         <Linkedin className="w-5 h-5" />
                       </a>
-                      <a href="mailto:cacmaronakagrawal@gmail.com" className="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-slate-500 hover:bg-primary-100 hover:text-primary-600 transition-colors">
+                      <a href="mailto:cacmaronakagrawal@gmail.com" className="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-slate-500 hover:bg-secondary-100 hover:text-secondary-600 transition-colors">
                         <Mail className="w-5 h-5" />
                       </a>
                     </div>
@@ -225,7 +225,7 @@ export default function AboutPage() {
         </section>
 
         {/* CTA section */}
-        <section className="py-20 bg-slate-900">
+        <section className="py-20 bg-slate-950">
           <div className="container-custom">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">

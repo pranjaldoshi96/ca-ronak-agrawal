@@ -28,11 +28,11 @@ export default function ServicesPage() {
       <Header />
       <main>
         {/* Hero section */}
-        <section className="relative pt-32 pb-20 bg-gradient-to-br from-slate-900 via-primary-950 to-primary-900 overflow-hidden">
+        <section className="relative pt-32 pb-20 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 overflow-hidden">
           {/* Background decorations */}
           <div className="absolute inset-0">
-            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-secondary-500/10 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-primary-500/20 rounded-full blur-3xl" />
+            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-secondary-500/15 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-secondary-600/10 rounded-full blur-3xl" />
           </div>
 
           <div className="container-custom relative">
@@ -68,14 +68,14 @@ export default function ServicesPage() {
                     <CardContent className="p-8">
                       <div className="flex items-start gap-6">
                         {/* Icon */}
-                        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary-100 to-primary-50 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                          {IconComponent && <IconComponent className="w-8 h-8 text-primary-600" />}
+                        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-secondary-100 to-secondary-50 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                          {IconComponent && <IconComponent className="w-8 h-8 text-secondary-600" />}
                         </div>
 
                         <div className="flex-1">
                           {/* Title & badge */}
                           <div className="flex items-center gap-3 mb-3">
-                            <h2 className="text-2xl font-bold text-slate-900 group-hover:text-primary-700 transition-colors">
+                            <h2 className="text-2xl font-bold text-slate-900 group-hover:text-secondary-600 transition-colors">
                               {service.title}
                             </h2>
                           </div>
@@ -108,7 +108,7 @@ export default function ServicesPage() {
                           <div className="flex items-center justify-between pt-6 border-t border-slate-100">
                             <div>
                               <span className="text-sm text-slate-500">Starting from</span>
-                              <p className="text-2xl font-bold text-primary-700">
+                              <p className="text-2xl font-bold text-slate-900">
                                 ₹{service.pricing.basic.price.toLocaleString('en-IN')}
                               </p>
                             </div>
@@ -132,11 +132,11 @@ export default function ServicesPage() {
         {/* CTA Section */}
         <section className="py-20 bg-white">
           <div className="container-custom">
-            <div className="bg-gradient-to-r from-primary-700 to-primary-600 rounded-3xl p-8 md:p-12 text-center">
+            <div className="bg-gradient-to-r from-secondary-600 to-secondary-500 rounded-3xl p-8 md:p-12 text-center shadow-2xl shadow-secondary-500/20">
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
                 Not Sure Which Service You Need?
               </h2>
-              <p className="text-primary-100 mb-8 max-w-2xl mx-auto">
+              <p className="text-white/90 mb-8 max-w-2xl mx-auto">
                 Our experts will analyze your requirements and recommend the best 
                 solution. Book a free consultation today - no obligations!
               </p>

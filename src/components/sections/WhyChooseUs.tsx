@@ -58,15 +58,15 @@ export default function WhyChooseUs() {
             {/* Stats inline */}
             <div className="grid grid-cols-3 gap-6 p-6 bg-white rounded-2xl shadow-lg shadow-slate-200/50">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-700">{COMPANY_INFO.clientsServed}</div>
+                <div className="text-3xl font-bold text-secondary-600">{COMPANY_INFO.clientsServed}</div>
                 <div className="text-sm text-slate-500">Happy Clients</div>
               </div>
               <div className="text-center border-x border-slate-100">
-                <div className="text-3xl font-bold text-primary-700">{COMPANY_INFO.experience}</div>
+                <div className="text-3xl font-bold text-secondary-600">{COMPANY_INFO.experience}</div>
                 <div className="text-sm text-slate-500">Years</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-700">99%</div>
+                <div className="text-3xl font-bold text-secondary-600">99%</div>
                 <div className="text-sm text-slate-500">Satisfaction</div>
               </div>
             </div>
@@ -77,10 +77,10 @@ export default function WhyChooseUs() {
             {features.map((feature) => (
               <div
                 key={feature.title}
-                className="group p-6 bg-white rounded-2xl shadow-lg shadow-slate-200/50 border border-slate-100 hover:border-primary-200 hover:shadow-xl transition-all duration-300"
+                className="group p-6 bg-white rounded-2xl shadow-lg shadow-slate-200/50 border border-slate-100 hover:border-secondary-200 hover:shadow-xl transition-all duration-300"
               >
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-100 to-primary-50 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <feature.icon className="w-6 h-6 text-primary-600" />
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-secondary-100 to-secondary-50 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <feature.icon className="w-6 h-6 text-secondary-600" />
                 </div>
                 <h3 className="font-semibold text-slate-900 mb-2">{feature.title}</h3>
                 <p className="text-sm text-slate-600">{feature.description}</p>

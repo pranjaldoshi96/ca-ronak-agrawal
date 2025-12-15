@@ -33,15 +33,15 @@ export default function Header() {
       {/* Top bar */}
       <div className={cn(
         "hidden lg:block transition-all duration-300 border-b",
-        isScrolled ? "bg-slate-900 border-slate-800" : "bg-slate-900/90 backdrop-blur border-slate-800/50"
+        isScrolled ? "bg-slate-950 border-slate-800" : "bg-slate-950/90 backdrop-blur border-slate-800/50"
       )}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-10 text-sm">
-            <div className="flex items-center gap-6 text-slate-300">
+            <div className="flex items-center gap-6 text-slate-400">
               <span>{COMPANY_INFO.workingHours}</span>
             </div>
             <div className="flex items-center gap-6">
-              <a href={`tel:${COMPANY_INFO.phone}`} className="flex items-center gap-2 text-white hover:text-secondary-400 transition-colors">
+              <a href={`tel:${COMPANY_INFO.phone}`} className="flex items-center gap-2 text-secondary-400 hover:text-secondary-300 transition-colors">
                 <Phone className="w-4 h-4" />
                 {COMPANY_INFO.phone}
               </a>
@@ -61,8 +61,8 @@ export default function Header() {
             <div className={cn(
               "w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg transition-all",
               isScrolled
-                ? "bg-primary-700 text-white"
-                : "bg-white text-primary-700"
+                ? "bg-secondary-500 text-white"
+                : "bg-white text-slate-900"
             )}>
               RA
             </div>
@@ -107,7 +107,7 @@ export default function Header() {
               </Button>
             </a>
             <Link href="/contact">
-              <Button variant={isScrolled ? "primary" : "outline"} size="sm" className={!isScrolled ? "border-white text-white hover:bg-white hover:text-primary-700" : ""}>
+              <Button variant={isScrolled ? "secondary" : "outline"} size="sm" className={!isScrolled ? "border-white text-white hover:bg-white hover:text-slate-900" : ""}>
                 Get Free Consultation
               </Button>
             </Link>

@@ -24,9 +24,9 @@ export default function PricingPage() {
       <Header />
       <main>
         {/* Hero section */}
-        <section className="relative pt-32 pb-20 bg-gradient-to-br from-slate-900 via-primary-950 to-primary-900 overflow-hidden">
+        <section className="relative pt-32 pb-20 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 overflow-hidden">
           <div className="absolute inset-0">
-            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-secondary-500/10 rounded-full blur-3xl" />
+            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-secondary-500/15 rounded-full blur-3xl" />
           </div>
 
           <div className="container-custom relative text-center">
@@ -56,7 +56,7 @@ export default function PricingPage() {
                 className={cn(
                   "px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-all",
                   selectedService === "all"
-                    ? "bg-primary-700 text-white"
+                    ? "bg-slate-900 text-white"
                     : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                 )}
               >
@@ -69,7 +69,7 @@ export default function PricingPage() {
                   className={cn(
                     "px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-all",
                     selectedService === service.id
-                      ? "bg-primary-700 text-white"
+                      ? "bg-slate-900 text-white"
                       : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                   )}
                 >
@@ -108,7 +108,7 @@ export default function PricingPage() {
                   ].map((plan) => (
                     <Card 
                       key={plan.key}
-                      className={`relative ${plan.popular ? 'ring-2 ring-primary-500' : ''}`}
+                      className={`relative ${plan.popular ? 'ring-2 ring-secondary-500' : ''}`}
                       hover
                     >
                       {plan.popular && (
@@ -126,7 +126,7 @@ export default function PricingPage() {
                       </CardHeader>
                       <CardContent className="p-6">
                         <div className="mb-6">
-                          <span className="text-3xl font-bold text-primary-700">
+                          <span className="text-3xl font-bold text-slate-900">
                             ₹{plan.price.toLocaleString('en-IN')}
                           </span>
                           {service.id === 'gst' && plan.key !== 'basic' && (
@@ -171,7 +171,7 @@ export default function PricingPage() {
         {/* Custom quote section */}
         <section className="py-20 bg-white">
           <div className="container-custom">
-            <div className="bg-gradient-to-r from-slate-900 to-primary-900 rounded-3xl p-8 md:p-12">
+            <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-3xl p-8 md:p-12">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                   <Badge variant="secondary" className="mb-4">Enterprise Solutions</Badge>

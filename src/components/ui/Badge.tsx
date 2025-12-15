@@ -8,7 +8,7 @@ interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
 const Badge = forwardRef<HTMLSpanElement, BadgeProps>(
   ({ className, variant = "primary", ...props }, ref) => {
     const variants = {
-      primary: "bg-primary-100 text-primary-700",
+      primary: "bg-slate-100 text-slate-700",
       secondary: "bg-secondary-100 text-secondary-700",
       success: "bg-success-100 text-success-700",
       outline: "border border-slate-300 text-slate-600",
